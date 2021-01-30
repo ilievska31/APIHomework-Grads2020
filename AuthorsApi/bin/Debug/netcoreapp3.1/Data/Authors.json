@@ -1,0 +1,68 @@
+[
+  {
+    "UserId": "1",
+    "Name": "John Doe",
+    "Username": "jdoe",
+    "Email": "john.doe@gmail.com",
+    "Articles": [
+      {
+        "Id": "ddc82058-9a67-4926-9314-00faff10ec71",
+        "Title": "Object Oriented Programming -  Fundamentals",
+        "DatePublished": "12/12/2019",
+        "Level": "Beginner"
+      },
+      {
+        "Id": "4cfd5786-d2ac-4224-8fc5-8f9f3b055085",
+        "Title": "Web Development",
+        "DatePublished": "02/03/2020",
+        "Level": "Intermediate"
+      },
+      {
+        "Id": "092fe14e-514f-4b3e-894a-8ff499e2f00f",
+        "Title": "Unit Testing",
+        "DatePublished": "21/01/2020",
+        "Level": "Beginner"
+      }
+    ]
+  },
+  {
+    "UserId": "2",
+    "Name": "Jane Dean",
+    "Username": "janedean",
+    "Email": "jane.d@gmail.com",
+    "Articles": [
+      {
+        "Id": "a7368aa7-9fd0-4c69-a577-0744a6b170bc",
+        "Title": "Introduction to Machine Learning",
+        "DatePublished": "21/11/2019",
+        "Level": "Intermediate"
+      },
+      {
+        "Id": "5429f93a-2ddb-4953-be86-60e8514a2ab0",
+        "Title": "Decision Trees",
+        "DatePublished": "07/03/2020",
+        "Level": "Advanced"
+      }
+    ]
+  },
+  {
+    "UserId": "3",
+    "Name": "Ben Smith",
+    "Username": "smithb",
+    "Email": "bensmith@gmail.com",
+    "Articles": [
+      {
+        "Id": "3c635ddc-d819-45f9-bdbd-113372a4dbcd",
+        "Title": "Relational Databases Fundamentals",
+        "DatePublished": "15/01/2020",
+        "Level": "Intermediate"
+      },
+      {
+        "Id": "2bfbb45d-267e-4d7b-b111-2963ab040816",
+        "Title": "Relational Databases - Advanced",
+        "DatePublished": "02/03/2020",
+        "Level": "Advanced"
+      }
+    ]
+  }
+]

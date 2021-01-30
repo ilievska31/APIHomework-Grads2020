@@ -1,0 +1,182 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>AuthorsApi</name>
+    </assembly>
+    <members>
+        <member name="M:AuthorsApi.Controllers.ArticlesController.GetAuthors">
+            <summary>
+            Get a list of all articles
+            </summary>
+             <remarks>
+             Sample request:
+            
+                 GET /articles
+                 {
+                 
+                 }
+            
+             </remarks>
+        </member>
+        <member name="M:AuthorsApi.Controllers.ArticlesController.GetArticlesAfter(System.Int32)">
+             <summary>
+            Filter articles by year
+             </summary>
+             <remarks>
+             Sample request:
+            
+                 GET /articles/published-after/2018
+                 {
+                 
+                 }
+            
+             </remarks>
+        </member>
+        <member name="M:AuthorsApi.Controllers.ArticlesController.GetArticlesByLevel(System.String)">
+             <summary>
+            Filter articles by level
+             </summary>
+             <remarks>
+             Sample request:
+            
+                 GET /articles/level/beginner
+                 {
+                 
+                 }
+            
+             </remarks>
+        </member>
+        <member name="M:AuthorsApi.Controllers.AuthorsController.GetAuthors">
+            <summary>
+            Gets a list of all authors
+            </summary>
+             <remarks>
+             Sample request:
+            
+                 GET /authors
+                 {
+                 
+                 }
+            
+             </remarks>
+        </member>
+        <member name="M:AuthorsApi.Controllers.AuthorsController.GetAuthor(System.Int32)">
+            <summary>
+            Gets an author by id
+            </summary>
+             <remarks>
+                 Sample request:
+            
+                 GET /authors/1
+                 {
+                 
+                 }
+            
+             </remarks>
+        </member>
+        <member name="M:AuthorsApi.Controllers.AuthorsController.GetAuthorArticlesBy(System.Int32,System.String,System.String,System.String)">
+            <summary>
+            Search author articles by Id, Title, Level and/or Published Date
+            </summary>
+             <remarks>
+             Sample request:
+            
+                 GET /authors/1/articles?title=object
+                 {
+                      
+                 }
+            
+             </remarks>
+        </member>
+        <member name="M:AuthorsApi.Controllers.AuthorsController.PutAuthor(System.Int32,AuthorsApi.Models.Author,System.String)">
+            <summary>
+            Lets admin user update Author by Id
+            </summary>
+             <remarks>
+             Sample request:
+            
+                 PUT /authors/1
+                 {
+                 
+                     "id": "1",
+                     "name": "Johnna Do",
+                     "username": "jdoe",
+                     "email": "john.doe@gmail.com"
+                 
+                 }
+            
+             </remarks>
+        </member>
+        <member name="M:AuthorsApi.Controllers.AuthorsController.PutAuthorArticle(System.Int32,AuthorsApi.Models.ArticleDTO,System.String,System.String)">
+            <summary>
+            Lets author update article title and/or level by Id 
+            </summary>
+             <remarks>
+             Sample request:
+            
+                 PUT /authors/1/articles/edit/ddc82058-9a67-4926-9314-00faff10ec71z
+                 {
+                     "Id": "ddc82058-9a67-4926-9314-00faff10ec71",
+                      "Title": "Structured Programming -  Fundamentals",
+                      "Level": "Beginner"
+                 }
+                 
+                 
+            
+             </remarks>
+        </member>
+        <member name="M:AuthorsApi.Controllers.AuthorsController.PostAuthor(AuthorsApi.Models.AuthorDTO,System.String)">
+            <summary>
+            Lets admin user create new author
+            </summary>
+             <remarks>
+             Sample request:
+            
+                 POST /authors/
+                 {
+                 
+                     "id": "4",
+                     "name": "Sarah Jay",
+                     "username": "sjay",
+                     "email": "s.jay@gmail.com"
+                 
+                 }
+            
+             </remarks>
+        </member>
+        <member name="M:AuthorsApi.Controllers.AuthorsController.PostAuthorArticle(System.Int32,AuthorsApi.Models.ArticleDTO,System.String)">
+            <summary>
+            Lets author create article 
+            </summary>
+             <remarks>
+             Sample request:
+            
+                 PUT /authors/1/articles/new
+                 {
+                   
+                      "Title": "Structured Programming -  Fundamentals",
+                      "Level": "Beginner",
+                      "DatePublished": "12/12/2019"
+                 }
+                 
+                 
+            
+             </remarks>
+        </member>
+        <member name="M:AuthorsApi.Controllers.AuthorsController.DeleteAuthor(System.Int32,System.String)">
+            <summary>
+            Lets admin user delete an author by id
+            </summary>
+             <remarks>
+             Sample request:
+            
+                 DELETE /authors/1
+                 {
+                 
+                 
+                 }
+            
+             </remarks>
+        </member>
+    </members>
+</doc>

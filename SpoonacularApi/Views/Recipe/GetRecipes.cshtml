@@ -1,0 +1,41 @@
+﻿@model IEnumerable<SpoonacularApi.Models.Recipe>
+
+@{
+    ViewData["Title"] = "Search results";
+}
+
+<h1>Search results</h1>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Image)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Title)
+            </th>
+            <th>
+               
+            </th>
+            
+        </tr>
+    </thead>
+
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                <img src="@item.Image"/>
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Title)
+            </td>
+            <td>
+               <p>@Html.ActionLink("View details","GetDetails","Recipe", new { id = item.Id })</p>
+            </td>
+          
+        </tr>
+}
+    </tbody>
+</table>

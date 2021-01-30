@@ -1,0 +1,33 @@
+﻿@model RecipeDetails
+@{
+    ViewData["Title"] = "Details";
+}
+
+<div class="container">
+    <div class="row">
+        <h1 class="display-2">@Model.Title</h1>
+    </div>
+
+    <div class="row">
+        <img src="@Model.Image" />
+
+    </div>
+    <div class="row">
+        <h5 class="display-4">Ingredients</h5>
+    </div>
+    <div class="row">
+        <ul class="list-group list-unstyled">
+            @foreach (var ingredient in Model.ExtendedIngredients)
+            {
+                <li>@ingredient.Original</li>
+            }
+        </ul>
+    </div>
+    <div class="row">
+        <h5 class="display-4">Instructions</h5>
+        <p class="text-body">@Model.Instructions</p>
+
+    </div>
+
+</div>
+

@@ -1,0 +1,17 @@
+﻿
+@{
+    ViewData["Title"] = "Index";
+}
+
+
+
+
+
+        <h1>Find recipes</h1>
+ 
+
+@using (Html.BeginForm("GetRecipes", "Recipe", FormMethod.Get, new { @class = "form-group" }))
+{
+    @Html.TextBox("name", null, new { @class = "form-control input-block-level", @placeholder = "Ex. pizza, pasta, cheesecake..." })
+    <button type="submit" class="btn btn-primary btn-block m-2">Search</button>
+}
